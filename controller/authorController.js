@@ -4,7 +4,6 @@ const createAuthor= async (req,res)=>{
   const author= new Author(req.body)
   const save= await author.save()
   res.json(save)
-
 }
 
 const getAllAuthor= async(req,res)=>{
